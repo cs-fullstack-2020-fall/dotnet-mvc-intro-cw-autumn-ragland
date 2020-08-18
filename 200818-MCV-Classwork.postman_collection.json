@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "8334dda8-b276-4643-8e38-5ab3a679d2b0",
+		"name": "200818-MCV-Classwork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Default Home Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Greet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Greeting/Greet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Greeting",
+						"Greet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Greet User with Visits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Greeting/GreetUser?name=Autumn&visits=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Greeting",
+						"GreetUser"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Autumn"
+						},
+						{
+							"key": "visits",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
